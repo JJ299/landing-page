@@ -6,3 +6,8 @@ function changeBgColor(color) {
 	const sec = document.querySelector('.sec');
 	sec.style.background = color;
 }
+
+function menuToggle() {
+	const toggleMenu = document.querySelector('.toggleMenu');
+	toggleMenu.classList.toggle('active')
+}
