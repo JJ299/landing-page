@@ -166,14 +166,15 @@ header ul li a {
 		max-width: 60px;
 	}
 	header ul {
-		display: fixed;
+		position: fixed;
 		top: 0;
 		left: 0;
 		width: 100%;
 		height: 100%;
+		background: #fff;
 		z-index: 1;
 		flex-direction: column;
-		align-items: center;
+		align-items: center; 
 		justify-content: center;
 		transition: 0.2s;
 		visibility: hidden;
@@ -204,16 +205,17 @@ header ul li a {
 		background: url(img/menu.png);
 		background-position: center;
 		background-size: 30px;
-		background-repeat: not-repeat;
+		background-repeat: no-repeat;
 		z-index: 2;
 		cursor: pointer;
 	}
 
 	.toggleMenu.active {
-		background: url(img/clos.png);
+		background: url(img/close.png);
 		background-position: center;
 		background-size: 25px;
 		background-repeat: no-repeat;
+		filter: invert(1);
 	}
 
 	.content {
